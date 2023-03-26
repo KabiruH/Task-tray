@@ -1,0 +1,622 @@
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230322074118)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "email" varchar NOT NULL, "password_digest" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230322074118"]]
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-22 07:52:15.588929"], ["updated_at", "2023-03-22 07:52:15.588929"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:21:31 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:23:02 +0300
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:23:13 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:23:24 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+        render :json {
+                     ^
+):
+  
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:23:52 +0300
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:24:49 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:25:09 +0300
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started POST "/user" for 127.0.0.1 at 2023-03-22 11:26:24 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+        render :json {
+                     ^
+):
+  
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/user" for 127.0.0.1 at 2023-03-22 11:26:38 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/user"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:26:44 +0300
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:26:56 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+Started POST "/user" for 127.0.0.1 at 2023-03-22 11:26:59 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+        render :json {
+                     ^
+):
+  
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/user" for 127.0.0.1 at 2023-03-22 11:27:27 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+        render :json {
+                     ^
+):
+  
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/user" for 127.0.0.1 at 2023-03-22 11:28:16 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+        render :json {
+                     ^
+):
+  
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/user_controller.rb:1:in `<main>'
+Started POST "/user" for 127.0.0.1 at 2023-03-22 11:29:13 +0300
+  
+ActionController::RoutingError (uninitialized constant UserController
+Did you mean?  UsersController):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:29:18 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:30:13 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:30:35 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+        render :json {
+                     ^
+):
+  
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/application_controller.rb:4: syntax error, unexpected '{', expecting `end'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:31:07 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"kabiru", "email"=>" kabiru@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"kabiru", "email"=>" kabiru@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f429839fd50>, params: {"username"=>"kabiru", "email"=>" kabiru@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"kabiru", "email"=>" kabiru@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kabiru"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "kabiru"], ["email", " kabiru@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-22 08:31:08.456632"], ["updated_at", "2023-03-22 08:31:08.456632"]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "kabiru"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", " kabiru@email.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+Completed 200 OK in 468ms (Views: 0.3ms | ActiveRecord: 11.8ms | Allocations: 42602)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:31:39 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"kabiru", "email"=>" kabiru@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"kabiru", "email"=>" kabiru@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f42b08cd058>, params: {"username"=>"kabiru", "email"=>" kabiru@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"kabiru", "email"=>" kabiru@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kabiru"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kabiru"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+Completed 200 OK in 337ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 3969)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:31:52 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"mamamia", "email"=>" mamamia@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"mamamia", "email"=>" mamamia@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f42b084cac0>, params: {"username"=>"mamamia", "email"=>" mamamia@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"mamamia", "email"=>" mamamia@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mamamia"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " mamamia@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "mamamia"], ["email", " mamamia@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-22 08:31:52.623937"], ["updated_at", "2023-03-22 08:31:52.623937"]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mTRANSACTION (52.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "mamamia"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", " mamamia@email.com"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+Completed 200 OK in 401ms (Views: 0.3ms | ActiveRecord: 53.6ms | Allocations: 4544)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:32:29 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"yellow", "email"=>" yellow@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"yellow", "email"=>" yellow@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00005591d43eef48>, params: {"username"=>"yellow", "email"=>" yellow@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"yellow", "email"=>" yellow@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "yellow"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " yellow@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "yellow"], ["email", " yellow@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-22 08:32:30.293660"], ["updated_at", "2023-03-22 08:32:30.293660"]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "yellow"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", " yellow@email.com"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+Completed 200 OK in 331ms (Views: 0.6ms | ActiveRecord: 11.9ms | Allocations: 6233)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:32:37 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"yellow", "email"=>" yellow@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"yellow", "email"=>" yellow@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f42b04b3350>, params: {"username"=>"yellow", "email"=>" yellow@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"yellow", "email"=>" yellow@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "yellow"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " yellow@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "yellow"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", " yellow@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:5:in `register'
+Completed 200 OK in 339ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 3946)
+
+
+Started GET "/users" for 127.0.0.1 at 2023-03-23 10:54:51 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/user" for 127.0.0.1 at 2023-03-23 10:54:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started GET "/user" for 127.0.0.1 at 2023-03-23 10:54:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+Started POST "/userS" for 127.0.0.1 at 2023-03-23 10:55:06 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/userS"):
+  
+Started POST "/users" for 127.0.0.1 at 2023-03-23 10:55:10 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+...tus: :unprocessable_entity data: user.errors)   
+...                           ^~~~
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+...sable_entity data: user.errors)   
+...                              ^
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:54: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:54: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:54: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-23 10:57:31 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+...tus: :unprocessable_entity data: user.errors)   
+...                           ^~~~
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+...sable_entity data: user.errors)   
+...                              ^
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:58: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:58: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:58: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-23 10:58:12 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+...tus: :unprocessable_entity data: user.errors)   
+...                           ^~~~
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+...sable_entity data: user.errors)   
+...                              ^
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-23 11:02:34 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+...tus: :unprocessable_entity data: user.errors)   
+...                           ^~~~
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+...sable_entity data: user.errors)   
+...                              ^
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTodos (20230323082530)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "description" varchar NOT NULL, "status" integer DEFAULT 0 NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_todos_on_user_id" ON "todos" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230323082530"]]
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 11:53:22 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+...tus: :unprocessable_entity data: user.errors)   
+...                           ^~~~
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+...sable_entity data: user.errors)   
+...                              ^
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:20: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:60: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 11:53:37 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:30: syntax error, unexpected tLABEL
+...led", status: 401, data: (info: "session has expired. Login ...
+...                          ^~~~~
+):
+  
+app/controllers/application_controller.rb:30: syntax error, unexpected tLABEL
+app/controllers/application_controller.rb:30: syntax error, unexpected tLABEL
+app/controllers/todos_controller.rb:1:in `<main>'
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 11:54:33 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:30: syntax error, unexpected tLABEL
+...led", status: 401, data: (info: "session has expired. Login ...
+...                          ^~~~~
+/home/king/Development/phase4/classwork/task-tray/api/app/controllers/application_controller.rb:41: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/application_controller.rb:30: syntax error, unexpected tLABEL
+app/controllers/application_controller.rb:41: syntax error, unexpected `end', expecting end-of-input
+app/controllers/application_controller.rb:30: syntax error, unexpected tLABEL
+app/controllers/application_controller.rb:41: syntax error, unexpected `end', expecting end-of-input
+app/controllers/todos_controller.rb:1:in `<main>'
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 11:54:40 +0300
+  
+NameError (uninitialized constant ApplicationController
+Did you mean?  ApplicationRecord):
+  
+app/controllers/todos_controller.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-24 08:49:45 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"railsbb", "email"=>"rails@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"railsbb", "email"=>"rails@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fc318b9c4d0>, params: {"username"=>"railsbb", "email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"railsbb", "email"=>"rails@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "railsbb"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rails@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "railsbb"], ["email", "rails@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-24 05:49:46.247654"], ["updated_at", "2023-03-24 05:49:46.247654"]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "railsbb"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "rails@email.com"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+Completed 201 Created in 373ms (Views: 0.6ms | ActiveRecord: 4.6ms | Allocations: 41707)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-24 08:49:51 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"railsbb", "email"=>"rails@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"railsbb", "email"=>"rails@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fc3285dce68>, params: {"username"=>"railsbb", "email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"railsbb", "email"=>"rails@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "railsbb"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rails@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "railsbb"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rails@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+Completed 422 Unprocessable Entity in 335ms (Views: 19.8ms | ActiveRecord: 1.1ms | Allocations: 7075)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-24 08:50:28 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"rails@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc328308458>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc328308458>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'rails@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc328308458>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+Completed 200 OK in 316ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 1647)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-24 08:50:34 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"rails@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc318cd83f8>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc318cd83f8>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'rails@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc318cd83f8>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+Completed 401 Unauthorized in 300ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1049)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-24 08:50:40 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"rails@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc318be8858>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc318be8858>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'rails@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fc318be8858>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"rails@email.com"}} }[0m
+Completed 200 OK in 300ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1387)
+
+
+Started GET "/user/login/check" for 127.0.0.1 at 2023-03-24 08:51:48 +0300
+  
+AbstractController::ActionNotFound (The action 'check_login_status' could not be found for UsersController
+Did you mean?  check_login):
+  
+actionpack (7.0.4.3) lib/abstract_controller/base.rb:146:in `process'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+rack (2.2.6.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.6.4) lib/rack/head.rb:12:in `call'
+activerecord (7.0.4.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.3) lib/rails/rack/logger.rb:25:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users/login/check" for 127.0.0.1 at 2023-03-24 08:52:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/login/check"):
+  
+Started GET "/todos" for 127.0.0.1 at 2023-03-24 08:52:26 +0300
+Processing by TodosController#index as */*
+  Parameters: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "todo"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:36:in `user'
+  [1m[36mTodo Load (2.1ms)[0m  [1m[34mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 4]]
+  ↳ app/controllers/application_controller.rb:7:in `app_response'
+Completed 200 OK in 56ms (Views: 4.6ms | ActiveRecord: 3.0ms | Allocations: 7382)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-24 09:44:25 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodosController#create as */*
+  Parameters: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "todo"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:36:in `user'
+[31mUnpermitted parameters: :email, :password, :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007f2050b32230>, params: {"email"=>"rails@email.com", "password"=>"[FILTERED]", "controller"=>"todos", "action"=>"create", "todo"=>{}} }[0m
+Completed 422 Unprocessable Entity in 204ms (Views: 35.0ms | ActiveRecord: 2.0ms | Allocations: 61668)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-24 09:46:24 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5", "priority"=>"HIGH"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:36:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007f204c012610>, params: {"title"=>"class", "description"=>"class at 5", "priority"=>"HIGH", "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"class", "description"=>"class at 5", "priority"=>"HIGH"}} }[0m
+Completed 422 Unprocessable Entity in 5ms (Views: 0.7ms | ActiveRecord: 0.1ms | Allocations: 1644)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-24 09:46:40 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:36:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007f205c039b60>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "description", "status", "priority", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "class"], ["description", "class at 5, every student expected"], ["status", 0], ["priority", 2], ["user_id", 4], ["created_at", "2023-03-24 06:46:40.984342"], ["updated_at", "2023-03-24 06:46:40.984342"]]
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+Completed 201 Created in 17ms (Views: 0.5ms | ActiveRecord: 7.1ms | Allocations: 3152)
+
+
+Started GET "/ws" for ::1 at 2023-03-24 09:47:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started POST "/users/login" for 127.0.0.1 at 2023-03-24 09:51:26 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"kelvin", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f204c051518>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f204c051518>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'kelvin' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1129)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-24 09:52:04 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"kelvin", "email"=>"kelvin@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin", "email"=>"kelvin@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f2050b4dfd0>, params: {"username"=>"kelvin", "email"=>"kelvin@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"kelvin", "email"=>"kelvin@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kelvin"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kelvin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "kelvin"], ["email", "kelvin@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-24 06:52:04.503532"], ["updated_at", "2023-03-24 06:52:04.503532"]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "kelvin"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "kelvin@email.com"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+Completed 201 Created in 400ms (Views: 0.5ms | ActiveRecord: 10.5ms | Allocations: 5233)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-24 09:52:15 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"kelvin", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f2048012bf0>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f2048012bf0>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'kelvin' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f2048012bf0>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+Completed 200 OK in 375ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 1388)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-24 09:53:45 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:36:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007f2040008450>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTodo Create (0.8ms)[0m  [1m[32mINSERT INTO "todos" ("title", "description", "status", "priority", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "class"], ["description", "class at 5, every student expected"], ["status", 0], ["priority", 2], ["user_id", 5], ["created_at", "2023-03-24 06:53:45.741937"], ["updated_at", "2023-03-24 06:53:45.741937"]]
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+Completed 201 Created in 23ms (Views: 0.6ms | ActiveRecord: 11.4ms | Allocations: 2983)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-24 09:53:50 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:36:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007f20511ed430>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTodo Create (0.5ms)[0m  [1m[32mINSERT INTO "todos" ("title", "description", "status", "priority", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "class"], ["description", "class at 5, every student expected"], ["status", 0], ["priority", 2], ["user_id", 5], ["created_at", "2023-03-24 06:53:50.109579"], ["updated_at", "2023-03-24 06:53:50.109579"]]
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+Completed 201 Created in 19ms (Views: 0.5ms | ActiveRecord: 9.4ms | Allocations: 2971)
+
+
+Started GET "/ws" for ::1 at 2023-03-24 09:56:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
