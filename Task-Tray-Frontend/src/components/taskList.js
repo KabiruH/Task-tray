@@ -15,6 +15,7 @@ export default function TaskList () {
         <Routes>
             <Route path="/" element= {<SignUp/>}></Route>
             <Route path="/signIn" element= {<SignIn/>}></Route>
+            <Route path="/signUp" element= {<SignUp/>}></Route>
             <Route path="/task" element= {<Task/>}></Route>
             <Route path="/add" element= {<AddTodo/>}></Route>
             <Route path="/update" element= {<UpdateTodos/>}></Route>

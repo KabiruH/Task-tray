@@ -1,8 +1,10 @@
 class ApplicationController < ActionController::API
     include ActionController::Cookies
+    before_action :set_cors_headers
 
     rescue_from StandardError, with: :standard_error
 
+    
     def app_response(message: 'success', status: 200, data: nil)
         render json: {
             message: message,
@@ -40,5 +42,15 @@ class ApplicationController < ActionController::API
     def standard_error(exception)
         app_response(message: 'failed', data: { info: exception.message }, status: :unprocessable_entity)
     end
+
+    private
+
+  def set_cors_headers
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
+    headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
+    headers['Access-Control-Allow-Credentials'] = 'true'
+    headers['Access-Control-Max-Age'] = '1728000'
+  end
 
 end
