@@ -10,21 +10,26 @@ export default function SignUp() {
   const handleSubmit = async (event) => {
     event.preventDefault();
   
-    const response = await fetch("http://localhost:3000/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ username, email, password }),
-    });
+    try {
+      const response = await fetch("http://localhost:3000/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, email, password }),
+      });
   
-    if (response.ok) {
-      navigate("/signIn");
-    } else {
-      const data = await response.json();
-      console.error(data.error);
+      if (response.ok) {
+        navigate("/signIn");
+      } else {
+        const data = await response.json();
+        console.error(data.error);
+      }
+    } catch (error) {
+      console.error("An unexpected error occurred: ", error);
     }
   };
+  
   
   return (
     <div class="card">

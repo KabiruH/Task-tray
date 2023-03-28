@@ -1309,3 +1309,771 @@ Completed 200 OK in 16ms (Views: 1.8ms | ActiveRecord: 0.9ms | Allocations: 5125
 
 
   [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:24:40 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting =>
+...:ok, data: {user: user, token :token})
+...                              ^
+):
+  
+app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting =>
+app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting =>
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:25:14 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting =>
+...ul', status: :ok, data: {user :user, token :token})
+...                              ^
+/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting '='
+...:ok, data: {user :user, token :token})
+...                              ^
+):
+  
+app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting =>
+app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting '='
+app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting =>
+app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting '='
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:25:36 +0300
+  
+SyntaxError (/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/application_controller.rb:21: syntax error, unexpected local variable or method, expecting '}'
+                email: email
+                ^~~~~
+/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/application_controller.rb:24: syntax error, unexpected '}', expecting `end'
+       }
+       ^
+/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/application_controller.rb:26: syntax error, unexpected ';', expecting ')'
+       JWT.encode(pay;oad, ENV['tas_train_key'], 'H...
+                     ^
+/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/application_controller.rb:26: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+... ENV['tas_train_key'], 'HS256')
+...                              ^
+/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/application_controller.rb:27: syntax error, unexpected =>
+...     rescue JWT::EncodeError =>e
+...                             ^~
+/home/king/Development/phase4/classwork/task-tray/Task-tray/app/controllers/application_controller.rb:110: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/application_controller.rb:21: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/application_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/application_controller.rb:26: syntax error, unexpected ';', expecting ')'
+app/controllers/application_controller.rb:26: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/application_controller.rb:27: syntax error, unexpected =>
+app/controllers/application_controller.rb:110: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:21: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/application_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/application_controller.rb:26: syntax error, unexpected ';', expecting ')'
+app/controllers/application_controller.rb:26: syntax error, unexpected ')', expecting '.' or &. or :: or '['
+app/controllers/application_controller.rb:27: syntax error, unexpected =>
+app/controllers/application_controller.rb:110: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:25:37 +0300
+  
+NameError (uninitialized constant ApplicationController
+Did you mean?  ApplicationRecord):
+  
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:25:42 +0300
+  
+NameError (uninitialized constant ApplicationController
+Did you mean?  ApplicationRecord):
+  
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:41:00 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"kelvin", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa43cd35800>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa43cd35800>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'kelvin' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa43cd35800>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+Completed 204 No Content in 281ms (ActiveRecord: 1.4ms | Allocations: 36838)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:41:04 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"kelvin", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa44ca2f448>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa44ca2f448>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'kelvin' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa44ca2f448>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+Completed 204 No Content in 250ms (ActiveRecord: 0.4ms | Allocations: 1241)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:41:31 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"kelvin", "email"=>"kelvin@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin", "email"=>"kelvin@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa43c3e0f20>, params: {"username"=>"kelvin", "email"=>"kelvin@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"kelvin", "email"=>"kelvin@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kelvin"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kelvin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kelvin"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kelvin@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+Completed 422 Unprocessable Entity in 1528ms (Views: 1267.0ms | ActiveRecord: 1.6ms | Allocations: 1029108)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:41:37 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"kelvin", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa4495bf9b0>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa4495bf9b0>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'kelvin' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa4495bf9b0>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+Completed 204 No Content in 243ms (ActiveRecord: 0.2ms | Allocations: 1242)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-27 11:41:50 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:92:in `user'
+[31mUnpermitted parameter: :todo. Context: { controller: TodosController, action: create, request: #<ActionDispatch::Request:0x00007fa448b0e610>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"todos", "action"=>"create", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTodo Create (0.4ms)[0m  [1m[32mINSERT INTO "todos" ("title", "description", "status", "priority", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["title", "class"], ["description", "class at 5, every student expected"], ["status", 0], ["priority", 2], ["user_id", 5], ["created_at", "2023-03-27 08:41:50.849583"], ["updated_at", "2023-03-27 08:41:50.849583"]]
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todos_controller.rb:5:in `create'
+Completed 201 Created in 28ms (Views: 0.4ms | ActiveRecord: 4.8ms | Allocations: 22348)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:42:05 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"kelvin", "password"=>"[FILTERED]", "user"=>{"username"=>"kelvin"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa43cc65150>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa43cc65150>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'kelvin' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa43cc65150>, params: {"username"=>"kelvin", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"kelvin"}} }[0m
+Completed 204 No Content in 242ms (ActiveRecord: 0.2ms | Allocations: 1222)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:42:13 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rease", "password"=>"[FILTERED]", "user"=>{"username"=>"rease"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa434182290>, params: {"username"=>"rease", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"rease"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa434182290>, params: {"username"=>"rease", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"rease"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'rease' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+Completed 401 Unauthorized in 5ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 917)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 11:42:34 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"plural", "email"=>"plural@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"plural", "email"=>"plural@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa449460290>, params: {"username"=>"plural", "email"=>"plural@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"plural", "email"=>"plural@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "plural"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "plural@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "plural"], ["email", "plural@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-27 08:42:34.690768"], ["updated_at", "2023-03-27 08:42:34.690768"]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "plural"], ["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "plural@email.com"], ["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `register'
+Completed 201 Created in 257ms (Views: 0.3ms | ActiveRecord: 9.7ms | Allocations: 4930)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:42:59 +0300
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"plural", "password"=>"[FILTERED]", "user"=>{"username"=>"plural"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa440103330>, params: {"username"=>"plural", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"plural"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa440103330>, params: {"username"=>"plural", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"plural"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'plural' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa440103330>, params: {"username"=>"plural", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"plural"}} }[0m
+Completed 204 No Content in 244ms (ActiveRecord: 0.3ms | Allocations: 1223)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 11:43:12 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"plural@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa4381d8100>, params: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"plural@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa4381d8100>, params: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"plural@email.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'plural@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:28:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa4381d8100>, params: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"plural@email.com"}} }[0m
+Completed 204 No Content in 250ms (ActiveRecord: 0.2ms | Allocations: 1221)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 12:09:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"plural@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f96b09fb980>, params: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"plural@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f96b09fb980>, params: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"plural@email.com"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'plural@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f96b09fb980>, params: {"email"=>"plural@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"plural@email.com"}} }[0m
+Completed 200 OK in 259ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 37170)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-27 12:09:49 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+Filter chain halted as :verify_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 144)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 12:10:10 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"yellow", "email"=>"yellow@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"yellow", "email"=>"yellow@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f969c01b460>, params: {"username"=>"yellow", "email"=>"yellow@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"yellow", "email"=>"yellow@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "yellow"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yellow@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "yellow"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "yellow@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 497ms (Views: 256.4ms | ActiveRecord: 0.8ms | Allocations: 353840)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 12:10:22 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"blue", "email"=>"blue@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"blue", "email"=>"blue@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f96a06bd9e0>, params: {"username"=>"blue", "email"=>"blue@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"blue", "email"=>"blue@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "blue"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "blue@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "blue"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "blue@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 245ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 4309)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 12:10:31 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"blue-green", "email"=>"blue@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"blue-green", "email"=>"blue@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f969802a838>, params: {"username"=>"blue-green", "email"=>"blue@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"blue-green", "email"=>"blue@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "blue-green"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "blue@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "blue-green"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "blue@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 249ms (Views: 0.6ms | ActiveRecord: 0.7ms | Allocations: 4325)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 12:10:40 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"blueray", "email"=>"blue@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"blueray", "email"=>"blue@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007f96ac01ad20>, params: {"username"=>"blueray", "email"=>"blue@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"blueray", "email"=>"blue@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "blueray"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "blue@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "blueray"], ["email", "blue@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-27 09:10:40.388971"], ["updated_at", "2023-03-27 09:10:40.388971"]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (52.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "blueray"], ["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "blue@email.com"], ["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 201 Created in 293ms (Views: 0.4ms | ActiveRecord: 53.4ms | Allocations: 5005)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 12:11:06 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"blue@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"blue@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f96a40af248>, params: {"email"=>"blue@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"blue@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f96a40af248>, params: {"email"=>"blue@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"blue@email.com"}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'blue@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007f96a40af248>, params: {"email"=>"blue@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"blue@email.com"}} }[0m
+Completed 200 OK in 240ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1449)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-27 12:11:20 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+Filter chain halted as :verify_auth rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 122)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-27 12:11:29 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+Filter chain halted as :verify_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 122)
+
+
+Started GET "/ws" for ::1 at 2023-03-27 15:44:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 15:44:39 +0300
+Processing by UsersController#login as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "user"=>{}}
+[31mUnpermitted parameters: :title, :description, :priority, :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fca10018fb0>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"users", "action"=>"login", "user"=>{}} }[0m
+[31mUnpermitted parameters: :title, :description, :priority, :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fca10018fb0>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"users", "action"=>"login", "user"=>{}} }[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 401 Unauthorized in 15ms (Views: 0.8ms | ActiveRecord: 3.1ms | Allocations: 1432)
+
+
+Started GET "/ws" for ::1 at 2023-03-27 15:44:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-27 15:45:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-27 15:45:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-27 15:46:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-27 15:48:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-27 15:53:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started GET "/ws" for ::1 at 2023-03-27 16:01:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/ws"):
+  
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 16:12:52 +0300
+Processing by UsersController#login as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "user"=>{}}
+[31mUnpermitted parameters: :title, :description, :priority, :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fca0816cb30>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"users", "action"=>"login", "user"=>{}} }[0m
+[31mUnpermitted parameters: :title, :description, :priority, :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fca0816cb30>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"users", "action"=>"login", "user"=>{}} }[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 401 Unauthorized in 5ms (Views: 0.5ms | ActiveRecord: 0.6ms | Allocations: 1002)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 16:13:00 +0300
+Processing by UsersController#register as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "user"=>{}}
+[31mUnpermitted parameters: :title, :description, :priority, :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fca080fb458>, params: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "controller"=>"users", "action"=>"register", "user"=>{}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 404ms (Views: 357.8ms | ActiveRecord: 0.9ms | Allocations: 370738)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 16:14:13 +0300
+Processing by UsersController#register as */*
+  Parameters: {"password"=>"[FILTERED]", "username"=>"kabiru", "email"=>"kabiru@email.com", "user"=>{"username"=>"kabiru", "email"=>"kabiru@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fca0809a928>, params: {"password"=>"[FILTERED]", "username"=>"kabiru", "email"=>"kabiru@email.com", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"kabiru", "email"=>"kabiru@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kabiru"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kabiru"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 298ms (Views: 1.3ms | ActiveRecord: 1.1ms | Allocations: 4356)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 16:14:24 +0300
+Processing by UsersController#register as */*
+  Parameters: {"password"=>"[FILTERED]", "username"=>"kabz", "email"=>"kabiru@email.com", "user"=>{"username"=>"kabz", "email"=>"kabiru@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fca0c29d640>, params: {"password"=>"[FILTERED]", "username"=>"kabz", "email"=>"kabiru@email.com", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"kabz", "email"=>"kabiru@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kabz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "kabz"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 313ms (Views: 1.2ms | ActiveRecord: 1.0ms | Allocations: 4264)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-27 16:14:32 +0300
+Processing by UsersController#register as */*
+  Parameters: {"password"=>"[FILTERED]", "username"=>"huria", "email"=>"kabiru@email.com", "user"=>{"username"=>"huria", "email"=>"kabiru@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fca041debf8>, params: {"password"=>"[FILTERED]", "username"=>"huria", "email"=>"kabiru@email.com", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"huria", "email"=>"kabiru@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "huria"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kabiru@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Create (50.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "huria"], ["email", "kabiru@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-27 13:14:33.300838"], ["updated_at", "2023-03-27 13:14:33.300838"]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "huria"], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "kabiru@email.com"], ["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 201 Created in 379ms (Views: 0.3ms | ActiveRecord: 54.9ms | Allocations: 5013)
+
+
+Started POST "/users/login" for 127.0.0.1 at 2023-03-27 16:14:53 +0300
+Processing by UsersController#login as */*
+  Parameters: {"password"=>"[FILTERED]", "username"=>"huria", "user"=>{"username"=>"huria"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fca19064a38>, params: {"password"=>"[FILTERED]", "username"=>"huria", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"huria"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fca19064a38>, params: {"password"=>"[FILTERED]", "username"=>"huria", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"huria"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = 'huria' OR email = NULL) ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fca19064a38>, params: {"password"=>"[FILTERED]", "username"=>"huria", "controller"=>"users", "action"=>"login", "user"=>{"username"=>"huria"}} }[0m
+Completed 200 OK in 300ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 1517)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-28 23:35:37 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"polery", "password"=>"[FILTERED]", "email"=>"polery@email.com", "user"=>{"username"=>"polery", "email"=>"polery@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007effd8c11b80>, params: {"username"=>"polery", "password"=>"[FILTERED]", "email"=>"polery@email.com", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"polery", "email"=>"polery@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "polery"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "polery@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "polery"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "polery@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 670ms (Views: 341.8ms | ActiveRecord: 1.9ms | Allocations: 389606)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-28 23:35:50 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"orange", "password"=>"[FILTERED]", "email"=>"orange@email.com", "user"=>{"username"=>"orange", "email"=>"orange@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007effe8014160>, params: {"username"=>"orange", "password"=>"[FILTERED]", "email"=>"orange@email.com", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"orange", "email"=>"orange@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "orange@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "orange"], ["email", "orange@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-28 20:35:51.182250"], ["updated_at", "2023-03-28 20:35:51.182250"]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "orange"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "orange@email.com"], ["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 201 Created in 362ms (Views: 0.4ms | ActiveRecord: 10.1ms | Allocations: 5070)
+
+
+Started POST "/users" for ::1 at 2023-03-28 23:40:07 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"orange", "email"=>"orange@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"orange", "email"=>"orange@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007effd9c5f2f8>, params: {"username"=>"orange", "email"=>"orange@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"orange", "email"=>"orange@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "orange@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "orange@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 300ms (Views: 1.4ms | ActiveRecord: 1.0ms | Allocations: 4607)
+
+
+Started POST "/users" for ::1 at 2023-03-28 23:40:17 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"orange", "email"=>"orange@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"orange", "email"=>"orange@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007effe80c48d0>, params: {"username"=>"orange", "email"=>"orange@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"orange", "email"=>"orange@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "orange@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "orange@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 305ms (Views: 2.0ms | ActiveRecord: 1.0ms | Allocations: 4610)
+
+
+Started POST "/users" for ::1 at 2023-03-28 23:40:33 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007effdc019db0>, params: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "purple"], ["email", "purple@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-28 20:40:33.511747"], ["updated_at", "2023-03-28 20:40:33.511747"]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (52.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "purple"], ["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "purple@email.com"], ["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 201 Created in 365ms (Views: 0.4ms | ActiveRecord: 53.6ms | Allocations: 4751)
+
+
+Started POST "/users" for ::1 at 2023-03-28 23:57:22 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007effe0020738>, params: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 309ms (Views: 1.9ms | ActiveRecord: 8.8ms | Allocations: 4742)
+
+
+Started POST "/users" for ::1 at 2023-03-28 23:57:24 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007effd401fb00>, params: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 300ms (Views: 1.8ms | ActiveRecord: 1.1ms | Allocations: 4627)
+
+
+Started POST "/users" for ::1 at 2023-03-28 23:59:36 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa404b4b018>, params: {"username"=>"purple", "email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 513ms (Views: 242.1ms | ActiveRecord: 2.1ms | Allocations: 389592)
+
+
+Started POST "/users" for ::1 at 2023-03-28 23:59:56 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple12", "email"=>"purple@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"purple12", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa3f8018d78>, params: {"username"=>"purple12", "email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple12", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple12"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple12"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 289ms (Views: 1.1ms | ActiveRecord: 1.0ms | Allocations: 4281)
+
+
+Started POST "/users" for ::1 at 2023-03-29 00:00:09 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple12", "email"=>"purple@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"purple12", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa3fc018590>, params: {"username"=>"purple12", "email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple12", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple12"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple12"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 293ms (Views: 1.0ms | ActiveRecord: 1.0ms | Allocations: 4280)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-29 00:00:52 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.7.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.9ms | Allocations: 661)
+Completed 200 OK in 25ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5733)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-29 00:01:47 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple", "password"=>"[FILTERED]", "email"=>"purple@email.com", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa3fc0a0238>, params: {"username"=>"purple", "password"=>"[FILTERED]", "email"=>"purple@email.com", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 283ms (Views: 2.0ms | ActiveRecord: 1.0ms | Allocations: 4608)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-03-29 00:01:55 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"purple12", "password"=>"[FILTERED]", "email"=>"purple@email.com", "user"=>{"username"=>"purple12", "email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa3f0019410>, params: {"username"=>"purple12", "password"=>"[FILTERED]", "email"=>"purple@email.com", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"purple12", "email"=>"purple@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple12"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "purple12"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "purple@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 422 Unprocessable Entity in 292ms (Views: 1.4ms | ActiveRecord: 1.2ms | Allocations: 4280)
+
+
+Started POST "/users/login" for ::1 at 2023-03-29 00:02:48 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"purple@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"purple@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa3f80ce858>, params: {"email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"purple@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa3f80ce858>, params: {"email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"purple@email.com"}} }[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'purple@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa3f80ce858>, params: {"email"=>"purple@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"purple@email.com"}} }[0m
+Completed 200 OK in 317ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 1668)
+
+
+Started POST "/todos" for 127.0.0.1 at 2023-03-29 00:14:03 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH", "todo"=>{"title"=>"class", "description"=>"class at 5, every student expected", "priority"=>"HIGH"}}
+Filter chain halted as :verify_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.5ms | ActiveRecord: 1.6ms | Allocations: 164)
+
+
+Started POST "/users" for ::1 at 2023-03-29 00:32:24 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"delamare", "email"=>"delamare@email.com", "password"=>"[FILTERED]", "user"=>{"username"=>"delamare", "email"=>"delamare@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fa3f00b7c00>, params: {"username"=>"delamare", "email"=>"delamare@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"delamare", "email"=>"delamare@email.com"}} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "delamare"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "delamare@email.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "delamare"], ["email", "delamare@email.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-28 21:32:25.183262"], ["updated_at", "2023-03-28 21:32:25.183262"]]
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mTRANSACTION (8.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "delamare"], ["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "delamare@email.com"], ["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `register'
+Completed 201 Created in 296ms (Views: 0.4ms | ActiveRecord: 9.8ms | Allocations: 4982)
+
+
+Started POST "/users/login" for ::1 at 2023-03-29 00:32:35 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"delamare@email.com", "password"=>"[FILTERED]", "user"=>{"email"=>"delamare@email.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa40498a710>, params: {"email"=>"delamare@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"delamare@email.com"}} }[0m
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa40498a710>, params: {"email"=>"delamare@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"delamare@email.com"}} }[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'delamare@email.com') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: login, request: #<ActionDispatch::Request:0x00007fa40498a710>, params: {"email"=>"delamare@email.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"login", "user"=>{"email"=>"delamare@email.com"}} }[0m
+Completed 200 OK in 270ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 1318)
+
+
+Started POST "/todos" for ::1 at 2023-03-29 00:34:47 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"", "description"=>"", "priority"=>"", "todo"=>{"title"=>"", "description"=>"", "priority"=>""}}
+Filter chain halted as :verify_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+
+Started POST "/todos" for ::1 at 2023-03-29 00:35:00 +0300
+Processing by TodosController#create as */*
+  Parameters: {"title"=>"", "description"=>"", "priority"=>"", "todo"=>{"title"=>"", "description"=>"", "priority"=>""}}
+Filter chain halted as :verify_auth rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 134)
+
+

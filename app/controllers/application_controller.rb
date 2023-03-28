@@ -1,15 +1,52 @@
 class ApplicationController < ActionController::API
     include ActionController::Cookies
     before_action :set_cors_headers
+    
 
     rescue_from StandardError, with: :standard_error
 
-    
     def app_response(message: 'success', status: 200, data: nil)
         render json: {
             message: message,
             data: data
         }, status: status
+    end
+
+    # hash data into web token
+    def encode(uid, email)
+        payload = {
+            data: {
+                uid: uid,
+                email: email,
+                role: 'admin'
+            },
+            exp: Time.now.to_i + (6 * 3600)
+        }
+        begin
+            JWT.encode(payload, ENV['task_train_key'], 'HS256')
+        rescue JWT::EncodeError => e
+            app_response(message: 'failed', status: 400, data: { info: 'Something went wrong. Please try again' })
+        end
+    end
+
+    # unhash the token
+    def decode(token)
+        begin
+            JWT.decode(token, ENV['task_train_key'], true, { algorithm: 'HS256' })
+        rescue JWT::DecodeError => e
+            app_response(message: 'failed', status: 401, data: { info: 'Your session has expired. Please login again to continue' }) 
+        end
+    end
+
+    # verify authorization headers
+    def verify_auth
+        auth_headers = request.headers['Authorization']
+        if !auth_headers
+            app_response(message: 'failed', status: 401, data: { info: 'Your request is not authorized.' }) 
+        else
+            token = auth_headers.split(' ')[1]
+            save_user_id(token)
+        end
     end
 
     # store user id in session
@@ -35,6 +72,16 @@ class ApplicationController < ActionController::API
 
     # get logged in user
     def user
+        User.find(@uid) 
+    end
+
+    # save user's id
+    def save_user_id(token)
+        @uid = decode(token)[0]["data"]["uid"].to_i
+    end
+
+    # get logged in user (session)
+    def user_session
         User.find(session[:uid].to_i) 
     end
 
@@ -48,9 +95,7 @@ class ApplicationController < ActionController::API
   def set_cors_headers
     headers['Access-Control-Allow-Origin'] = '*'
     headers['Access-Control-Allow-Methods'] = 'POST, PUT, DELETE, GET, OPTIONS'
-    headers['Access-Control-Allow-Headers'] = 'Origin, X-Requested-With, Content-Type, Accept, Authorization'
-    headers['Access-Control-Allow-Credentials'] = 'true'
-    headers['Access-Control-Max-Age'] = '1728000'
+  
   end
 
 end

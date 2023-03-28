@@ -18,7 +18,7 @@ export default function Task () {
         <table className="taskTable">
         <thead>
           <tr>
-            <th>Name</th>
+            <th>Title</th>
             <th>Description</th>
             <th>Priority</th>
             <th>Status</th>
