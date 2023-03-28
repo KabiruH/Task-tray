@@ -7,8 +7,13 @@
 #   Character.create(name: "Luke", movie: movies.first)
 puts "start tasks"
 
-20.times do
-    Task.create(title: Faker::Lorem.sentence)
-end
-
+10.times do
+    priority = ['high', 'medium', 'low'][rand(1..3)]
+    Todo.create(
+      title: Faker::Lorem.sentence(word_count: 3),
+      description: Faker::Lorem.paragraph(sentence_count: 2),
+      priority: { "high" => 3, "medium" => 2, "low" => 1 }[priority]
+    )
+  end
+  
 puts "end tasks"

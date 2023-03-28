@@ -14,7 +14,7 @@ export default function AddTodo() {
 
     const handleSubmit = async (event) => {
         event.preventDefault();
-        const response = await fetch("http://localhost:3000/todos", {
+        const response = await fetch("https://task-tray.onrender.com/todos", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
