@@ -3,7 +3,16 @@ import { Link } from "react-router-dom";
 
 export default function Task () {
 
-    let todos = [];
+  const [todos, setTodos] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("https://task-tray.onrender.com/todos");
+      const data = await response.json();
+      setTodos(data);
+    }
+    fetchData();
+  }, []);
 
     function handleDelete () {
 
@@ -28,7 +37,7 @@ export default function Task () {
         <tbody>
           {todos.map(todo => (
             <tr key={todo.id}>
-              <td>1{todo.name}</td>
+              <td>1{todo.title}</td>
               <td>2{todo.description}</td>
               <td>3{todo.priority}</td>
               <td>4{todo.status}</td>
